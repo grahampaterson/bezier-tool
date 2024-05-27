@@ -102,6 +102,7 @@ function createRectangle(width, height) {
     rectangle.strokeRightWeight = 0
     rectangle.strokeLeftWeight = 1
     rectangle.strokeBottomWeight = 1
+    rectangle.strokeAlign = 'CENTER'
 
     let rectangle2 = figma.createRectangle()
     rectangle2.resize(width, height)
@@ -114,6 +115,7 @@ function createRectangle(width, height) {
     rectangle2.strokeLeftWeight = 0
     rectangle2.strokeBottomWeight = 0
     rectangle2.dashPattern = [10, 5]
+    rectangle2.strokeAlign = 'CENTER'
 
     return figma.group([rectangle, rectangle2], figma.currentPage)
 }
